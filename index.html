@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Portfolio - Dark Mode</title>
+<style>
+    body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #121212;
+        color: #e0e0e0;
+        scroll-behavior: smooth;
+    }
+    
+    header {
+        background: linear-gradient(135deg, #ff512f, #dd2476);
+        color: white;
+        padding: 1.5rem 0 1rem;
+        text-align: center;
+        animation: fadeInDown 1s ease;
+    }
+    header h1 {
+        margin: 0;
+        font-size: 2.3rem;
+        letter-spacing: 1px;
+    }
+    header p {
+        font-size: 1.1rem;
+        opacity: 0.85;
+        margin-bottom: 1rem;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+    nav a {
+        background: #1e1e1e;
+        color: #ff4081;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border-radius: 8px;
+        border: 1px solid #ff4081;
+        transition: all 0.3s ease;
+    }
+    nav a:hover {
+        background: #ff4081;
+        color: white;
+    }
+    .container {
+        max-width: 900px;
+        margin: auto;
+        padding: 2rem;
+        animation: fadeIn 1.5s ease;
+    }
+    section {
+        background: #1e1e1e;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+        transform: translateY(20px);
+        opacity: 0;
+        animation: slideUp 0.8s ease forwards;
+    }
+    section:nth-child(1) { animation-delay: 0.5s; }
+    section:nth-child(2) { animation-delay: 0.8s; }
+    section:nth-child(3) { animation-delay: 1.1s; }
+    section:nth-child(4) { animation-delay: 1.4s; }
+    section:nth-child(5) { animation-delay: 1.7s; }
+
+    section h2 {
+        color: #ff4081;
+        border-bottom: 2px solid #ff4081;
+        padding-bottom: 0.5rem;
+        margin-bottom: 1rem;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    ul li {
+        padding: 0.4rem 0;
+        border-bottom: 1px solid #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    ul li:last-child {
+        border-bottom: none;
+    }
+    .pdf-btn {
+        background: #ff4081;
+        color: white;
+        text-decoration: none;
+        padding: 0.3rem 0.7rem;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        transition: background 0.3s;
+    }
+    .pdf-btn:hover {
+        background: #e23370;
+    }
+    .contact-info a {
+        color: #ff4081;
+        text-decoration: none;
+        transition: color 0.3s;
+    }
+    .contact-info a:hover {
+        color: #e23370;
+    }
+    footer {
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+        color: #888;
+        animation: fadeIn 2s ease;
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+    @keyframes fadeInDown {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideUp {
+        from { transform: translateY(20px); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Saravanapriya N</h1>
+    <p>Software Developer</p>
+    <nav>
+        <a href="#summary">Summary</a>
+        <a href="#skills">Technical Skills</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <section id="summary">
+        <h2>Summary</h2>
+        <p>Motivated and detail-oriented B. Sc. Information Technology student with a strong foundation in programming, web development, and problem solving. Proficient in Java, Python, HTML, CSS, and MS Office tools. Quick learner with excellent communication, teamwork, and time management skills. Eager to contribute to innovative projects, process improvement, and digital transformation initiatives in a growth-oriented organization.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>Programming Language: Python, Java</li>
+            <li>Web Technologies: HTML, CSS</li>
+            <li>Tools & IDEs: Visual Studio Code</li>
+            <li>Operating Systems: Windows</li>
+            <li>Productivity Tools: MS Office (Word, Excel, Powerpoint)</li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>
+                Web Development using HTML - IBM Career Education Program via IBM Skills Network.
+                <a class="pdf-btn" href="https://drive.google.com/file/d/1merK8LPGyML6sQDKJZt6DqHHZUwqpLBk/view?usp=drivesdk" target="_blank">View PDF</a>
+            </li>
+            <li>
+                 First Price - Presentation Event - Organized by Sri G.V.G Visalakshi College for Women.
+                <a class="pdf-btn" href="https://drive.google.com/file/d/1mhzz-aLMSkEdk3xkqSt6QMEqTcaf8gVI/view?usp=drivesdk" target="_blank">View PDF</a>
+            </li>
+            
+        </ul>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>College:</strong> B.Sc IT – Sri G.V.G Visalakshi College for Women(2023 - 2026)</li>
+            <li><strong>School:</strong>                          HSC – Swamy Matric. Hr. Sec. School         (2022 - 2023)</li>
+            <li><strong>School:</strong>                         SSLC – Swamy Matric. Hr. Sec. School       (2020 - 2021)</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <ul class="contact-info">
+            <li><strong>Email:</strong> <a href="mailto:saravanapriyanagaraj24@gmail.com">saravanapriyanagaraj24@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/saravana-priya-93a59b282/" target="_blank">https://www.linkedin.com/in/saravana-priya-93a59b282/</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Saravanapriya24" target="_blank">https://github.com/Saravanapriya24</a></li>
+        </ul>
+    </section>
+</div>
+
+<footer>
+    &copy; 2025 Saravanapriya N | Portfolio
+</footer>
+
+</body>
+</html>
